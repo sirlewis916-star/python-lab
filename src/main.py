@@ -14,4 +14,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+    from utils import greet
+print(greet("Lewis"))
