@@ -1,18 +1,7 @@
 from utils import square, is_even, celsius_to_fahrenheit
 
-def main():
-    try:
-        num = float(input("Enter a number: "))
-        print(f"Square of {num} is: {square(num)}")
-        if is_even(int(num)):
-            print(f"{int(num)} is even.")
-        else:
-            print(f"{int(num)} is odd.")
-        print(f"{num}°C is {celsius_to_fahrenheit(num)}°F")
-    except ValueError:
-        print("Please enter a valid number.")
+num = float(input("Enter a number: "))
 
-if __name__ == "__main__":
-    main()
-    from utils import greet
-print(greet("Lewis"))
+print(f"Square: {square(num)}")
+print(f"Is Even: {is_even(num)} - {'Even' if is_even(num) else 'Odd'}")
+print(f"{num}°C in Fahrenheit is {celsius_to_fahrenheit(num)}°F")
